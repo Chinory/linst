@@ -1,0 +1,1 @@
+curl -s 'opendata.baidu.com/api.php?resource_id=6006&oe=utf-8&query='"$1"|jq -r '.data[0].location'
