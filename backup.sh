@@ -1,5 +1,6 @@
 #!/bin/bash
 BACKUP=$(dirname $(readlink -f "$0"))
+cd "$BACKUP"
 for list in *.files; do
   name=${list:0:-6}
   echo -e "\033[32m$name:\033[0m"
